@@ -9,7 +9,8 @@ let isInitialLoad = true;
 
 //  Unsplash API
 let initialCount = 30;
-const apiUrl = `https://api.unsplash.com/photos/random/?client_id=3K34_O2CX-ErGkEbzkml9kjWQ0YFkmnYiRPR3GF-u2Y&count=${initialCount}`;
+const apiKey = "3K34_O2CX-ErGkEbzkml9kjWQ0YFkmnYiRPR3GF-u2Y";
+const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${initialCount}`;
 
 function updateAPIURLWithNewCount(picCount) {
   apiUrl = `https://api.unsplash.com/photos/random/?client_id=3K34_O2CX-ErGkEbzkml9kjWQ0YFkmnYiRPR3GF-u2Y&count=${picCount}`;
